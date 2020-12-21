@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Quiz 5</title>
+        <script>
+        
+        document.getElementById("myText").innerHTML = iter;
+
+        </script>
+    </head>
+    <body>
+        <h2>Cloud Computing</h2>
+
+        <h3>Ahaan Rajesh</h3>
+        <h4>1001768638</h4>
+        <br><br>
+        <b id="counter" style="font-size: 70px">0</b>
+        <button type="button" id="rest" onclick="resettime();">Reset Counter</button>
+        <p id="demo"></p>
+       
+        <script>
+        var today = new Date();
+        document.getElementById("demo").innerHTML =today;
+        var counter = 0;
+        function resettime(){
+            counter = 0;
+        }
+        setInterval(function(){
+            console.log("setInterval")
+            document.getElementById("counter").innerHTML = counter;
+            counter = counter + 1;
+        }, 300)
+    </script>
+    </body>
+</html>
+
+

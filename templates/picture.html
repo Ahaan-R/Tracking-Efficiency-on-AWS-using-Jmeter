@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<table border=" 1.0">
+    {% for rows in pic %}
+    <tr>
+        <td><img src='static/{{rows}}'/></td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br>
+
+<a href="/"><input class="button3" type="button" value="Home"></a> <br>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d;
+    </script>
+
+
+<p>The Result is: {{data}}
+
+</p><br>
+
+<a href="/"><input class="button3" type="button" value="Home"></a> <br>
+
+{% endblock %}

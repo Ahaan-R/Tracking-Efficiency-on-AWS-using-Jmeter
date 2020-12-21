@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{%for i in range(leng)%}
+      {{data[i]}} {{"->"}}  {{wrd[i]}}
+<br>
+{%endfor%}
+
+
+
+</p><br>
+
+<a href="/"><input class="button3" type="button" value="Home"></a> <br>
+
+{% endblock %}

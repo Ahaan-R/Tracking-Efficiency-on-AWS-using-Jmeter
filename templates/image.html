@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% for row in ip %}
+     {{row}}
+     {% endfor %}
+      <br>
+      <p> <b>screenshot of AWS EC2 page, showing the single running instance. </b> </p>
+      <br>
+    <img width="1000" height="600" src = "static/aws.jpg" alt = "First image">
+    <br>
+    <br>
+    <p><b> screenshot of AWS EC2 page, showing the multiple running instances . </b> </p>
+    <br>
+    <img width="1000" height="600" src = "static/mul.jpg" alt = "First image">
+
+
+
+</p><br>
+<a href="/"><input class="button3" type="button" value="Home"></a> <br>
+
+ {% endblock %}

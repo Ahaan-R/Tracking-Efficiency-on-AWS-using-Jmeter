@@ -1,0 +1,182 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+Question 6
+<br>
+
+<a href="/names" method="GET">All Spanish stop words that occur in the Alamo story</a>
+
+
+
+<br>
+Ques 7<br>
+
+<form action="/q7" method="GET">
+     word<input type="text" name="x" id="x" />
+    <button type="submit">Submit</button>
+</form>
+
+<br>
+
+<br>
+Ques 8<br>
+
+<form action="/repeated" method="GET">
+    Least N words<input type="number" name="x" id="x" />
+    <button type="submit">Submit</button>
+</form>
+
+<br>
+<br>
+Question 9
+<br>
+
+<a href="/q9" method="GET">any sentences where any date (number) appears</a>
+
+
+<br>
+
+
+
+Question 10<br>
+
+<form action="/picture" method="GET">
+     word<input type="text" name="x" id="x" />
+    <button type="submit">Submit</button>
+</form>
+
+<br><br>
+<br>
+For N grams<br>
+
+
+<form action="/ngramroute" method="GET">
+    N value<input type="number" name="n" id="n" />
+    <button type="submit">Submit</button>
+</form>
+
+
+
+{% endblock %}
+
+
+<!--
+
+	For 2 files
+<br>
+
+<a href="/twofiles" method="GET">Comapre 2 Files</a>
+
+<br>
+<br>
+
+
+
+Calculator
+
+
+<form action="/calcu" method="GET">
+    X value(Please enter valid values)<input type="text" name="x" id="x" /><br>
+    Y value(Please enter valid values)<input type="text" name="y" id="y" /><br>
+    Operator(+, -, *, /, %)<input type="text" name="op" id="op" /><br>
+    <button type="submit">Submit</button>
+</form>
+
+
+
+	<p>
+ <form action="/calci" method="get">
+	Value 1<input type="text" name="rangefrom" maxlength="200" width="60"> <br/>
+ 	Value 2<input type="text" name="rangeto" maxlength="200" width="60"><br/>
+	 <a href="/add" method="GET">Add</a>
+	 <a href="/sub" method="GET">Subtract</a>
+	 <a href="/mul" method="GET">Multiply</a>
+	 <a href="/div" method="GET">Divide</a>
+  
+</form>
+</p>
+
+<a href="/image" method="GET">Click Me!</a>
+	
+Query 1
+<p>
+ <form action="/multiplerun1" method="get">
+	Depth Range from<input type="text" name="rangefrom" maxlength="200" width="60"> <br/>
+ 	Depth Range To<input type="text" name="rangeto" maxlength="200" width="60"><br/>
+	Latitude<input type="text" name="lat" maxlength="200" width="60"><br/>
+  <input type="submit" value="Submit"><br/><br/>
+</form>
+</p>
+
+query2
+<p>
+
+ <form action="/multiplerun" method="get">
+	Depth Range from<input type="text" name="rangefrom" maxlength="200" width="60"> <br/>
+ 	Depth Range to<input type="text" name="rangeto" maxlength="200" width="60"><br/>
+	Number of queries to run:<input type="text" name="nom" maxlength="200" width="60"></br>
+   <input type="submit" value="run query n times"><br/><br/>
+</form>
+</p>
+
+query3
+<p>
+
+ <form action="/multiplerun123" method="get">
+	Depth Range from<input type="text" name="rangefrom" maxlength="200" width="60"> <br/>
+ 	Depth Range to<input type="text" name="rangeto" maxlength="200" width="60"><br/>
+	Number of queries to run:<input type="text" name="nom" maxlength="200" width="60"></br>
+   <input type="submit" value="run query n times"><br/><br/>
+</form>
+</p>
+query4
+<p>
+
+ <form action="/multiplerun567" method="get">
+	Depth Range from<input type="text" name="rangefrom" maxlength="200" width="60"> <br/>
+ 	Depth Range to<input type="text" name="rangeto" maxlength="200" width="60"><br/>
+	Number of queries to run:<input type="text" name="nom" maxlength="200" width="60"></br>
+   <input type="submit" value="run query n times"><br/><br/>
+</form>
+</p>
+
+
+-------------------------------------
+Question 5-Bar graph
+<p>
+
+ <form action="/splitbar" method="get">
+	 split<input type="text" name="split" maxlength="200" width="60"><br/>
+    Year<input type="text" name="year" maxlength="200" width="60"><br/>
+	<p>Please wait as it might take a while to load</p>
+	<input type="submit" value="Bar Graph"><br/><br/>
+</form>
+
+
+
+Question 6-Pie
+<p>
+
+ <form action="/splitpie" method="get">
+	 split<input type="text" name="split" maxlength="200" width="60"><br/>
+    Year<input type="text" name="year" maxlength="200" width="60"><br/>
+	<p>Please wait as it might take a while to load</p>
+	<input type="submit" value="Pie Chart"><br/><br/>
+</form>
+
+
+Question 7-Scatter plot
+<p>
+
+ <form action="/splitsc" method="get">
+	Year Range from<input type="text" name="year1" maxlength="200" width="60"> <br/>
+ 	Year Range to<input type="text" name="year2" maxlength="200" width="60"><br/>
+    State<input type="text" name="split" maxlength="200" width="60"><br/>
+	<p>Please wait as it might take a while to load</p>
+	<input type="submit" value="Scatter Plot"><br/><br/>
+</form>
+
+
